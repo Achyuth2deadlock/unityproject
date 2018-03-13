@@ -1,0 +1,23 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+//Code for animation
+
+//declare
+public Animator anim;
+
+//getting component
+void start()
+{
+anim.GetComponent<Animator>();
+}
+
+
+void Update()
+{
+if(Input.GetKey(Keycode.A)) //If A is pressed
+{
+anim.SetBool("Play",true); // Play the "Play" Animation 
+}
+}
